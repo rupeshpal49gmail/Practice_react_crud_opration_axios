@@ -15,7 +15,7 @@ const Posts = () => {
   }, []);
   return (
     <section className="section-post">
-      <ul>
+      <ol>
         {data.map((curElement) => {
           const { id, body, title } = curElement;
           return (
@@ -27,7 +27,7 @@ const Posts = () => {
             </li>
           );
         })}
-      </ul>
+      </ol>
     </section>
   );
 };
